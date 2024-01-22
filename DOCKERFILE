@@ -1,0 +1,8 @@
+FROM python:3.11.7-slim-bookworm
+
+COPY py-requirements.txt ./
+
+# required to build the ndd python package
+RUN sudo apt install gfortran
+
+RUN pip install -r py-requirements.txt
