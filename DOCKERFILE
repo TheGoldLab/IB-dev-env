@@ -12,4 +12,7 @@ RUN apt update && apt install -y gfortran && rm -rf /var/lib/apt/lists/*
 
 # required before ndd can be installed
 RUN pip install numpy
-RUN pip install -r py-requirements.txt
+# RUN pip install -r py-requirements.txt
+RUN pip install ndd pandas matplotlib seaborn embo notebook 
+RUN pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
+RUN pip install pyro-ppl
