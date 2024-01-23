@@ -1,10 +1,15 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
 // README at: https://github.com/devcontainers/templates/tree/main/src/python
 {
-	"name": "IB-ENV",
+	"name": "ib-env",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
 	// "image": "mcr.microsoft.com/devcontainers/python:1-3.12-bullseye"
-	"image": "Dockerfile"
+	"build": {
+		"dockerfile": "../Dockerfile"
+		}
+
+	// added to solve bug
+	// "initializeCommand" : "ls"
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
