@@ -7,7 +7,7 @@ This repository contains the specification files required to construct a docker 
 - VS Code installed on your computer
     - VS Code Dev Containers extension
 - Docker Desktop installed on your computer
-- Git installed on your computer
+- Git installed  and set up on your computer
 
 ## Workflow
 1. Open your project folder (containing the files within this repo) in VS Code
